@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/addons/p5.sound.min.js"></script>
+    <script src="p5.serialport.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+        <h1>Siman Says</h1>
+        <div class="game-board">
+            <div class="simon">
+                <ul>
+                    <li id="red" class="tile red" data-tile="1"  data-color="red"></li>
+                    <li id="green" class="tile green" data-tile="2" data-color="green"></li>
+                    <li id="yellow" class="tile yellow" data-tile="3"  data-color="yellow"></li>
+                    <li id="blue" class="tile blue" data-tile="4"  data-color="blue"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="game-info">
+            <h2>Round: <span data-round="0">0</span></h2>
+            <button data-action="start">Start</button>
+            <p data-action="lose">Ohhh...you lost after <span data-round="0"></span> rounds!</p>
+        </div>
+        <div data-action="sound"></div>
+    </div>
+
+    
+    <script src="simon.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
