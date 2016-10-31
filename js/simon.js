@@ -23,6 +23,7 @@ var Simon = {
 			this.round = 0;
 			this.active = true;
 			$('p[data-action="lose"]').hide();
+			$('.lose').hide();
 			this.newRound();
 		},
 
@@ -67,6 +68,7 @@ var Simon = {
 		endGame: function() {
 			// notify the user that they lost and change the "round" text to zero
 			$('p[data-action=lose]').show();
+			$('.lose').show();
 			$($('[data-round]').get(0)).text('0');
 		},
 
